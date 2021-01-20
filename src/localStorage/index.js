@@ -21,5 +21,10 @@ export const setMountains = mountains => {
 export const getMountains = () => {
   const cache = getCache();
   const { mountains } = cache;
-  return mountains || [];
+  if (!Array.isArray(mountains) || mountains.length < 1) {
+    const defaultList = [Object.keys(mountainMap)[0]];
+    setMountains(defaultList);
+    return defaultList;
+  }
+  return mountains;
 };
