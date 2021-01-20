@@ -1,7 +1,13 @@
 import { localStorageKey, mountainMap } from '../constants';
 
-const getCache = () => JSON.parse(localStorage.getItem(localStorageKey)) || {};
-const setCache = newCache => localStorage.setItem(localStorageKey, JSON.stringify(newCache));
+const browserLocalStorage = (typeof window !== 'undefined' && window.localStorage)
+  || { getItem: () => {}, setItem: () => {}};
+
+const getCache = () => {
+  const cache = browserLocalStorage.getItem(localStorageKey);
+  return cache ? JSON.parse(cache) : {};
+};
+const setCache = newCache => browserLocalStorage.setItem(localStorageKey, JSON.stringify(newCache));
 
 export const setMountains = mountains => {
   const cache = getCache();

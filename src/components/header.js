@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import SettingsIcon from '../images/gear.svg';
-import Image from './image';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -33,7 +32,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <Link to='/settings'>
-        <img style={{ maxHeight: 40 }} src={SettingsIcon}></img>
+        <img style={{ maxHeight: 40 }} src={SettingsIcon} alt='settings'></img>
       </Link>
     </div>
   </header>
