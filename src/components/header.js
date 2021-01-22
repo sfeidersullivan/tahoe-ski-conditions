@@ -7,7 +7,7 @@ import SettingsIcon from '../images/gear.svg';
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `gray`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <Link to='/settings'>
-        <img style={{ maxHeight: 40 }} src={SettingsIcon} alt='settings'></img>
+        <img style={{ maxHeight: 30 }} src={SettingsIcon} alt='settings'></img>
       </Link>
     </div>
   </header>

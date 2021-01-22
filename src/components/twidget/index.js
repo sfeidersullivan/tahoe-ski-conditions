@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Twidget = ({ url, name }) => (
-  <div style={{ backgroundColor: 'white' }}>
+  <div style={{ backgroundColor: 'white', pointerEvents: 'none' }}>
     <a
       className="twitter-timeline"
-      height={600}
+      // height={600}
       style={{ margin: 0 }}
       href={url}>
         {name}
