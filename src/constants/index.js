@@ -13,7 +13,7 @@ export const mountainMap = {
   },
   'caltrans': {
     url: 'https://twitter.com/CaltransDist10?ref_src=twsrc%5Etfw',
-    name: 'Caltrans Dist 10',
+    name: 'Caltrans District 10',
   },
 };
 

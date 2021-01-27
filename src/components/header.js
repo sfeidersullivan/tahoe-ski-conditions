@@ -31,8 +31,8 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <Link to='/settings'>
-        <img style={{ maxHeight: 30 }} src={SettingsIcon} alt='settings'></img>
+      <Link style={{ height: 50, padding: 10 }} to='/settings'>
+        <img style={{ height: 30, width: 30, marginBottom: -10 }} src={SettingsIcon} alt='settings'></img>
       </Link>
     </div>
   </header>
