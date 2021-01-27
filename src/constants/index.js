@@ -11,6 +11,10 @@ export const mountainMap = {
     url: 'https://twitter.com/northstarmtn?ref_src=twsrc%5Etfw',
     name: 'Northstar',
   },
+  'caltrans': {
+    url: 'https://twitter.com/CaltransDist10?ref_src=twsrc%5Etfw',
+    name: 'Caltrans Dist 10',
+  },
 };
 
 export const localStorageKey = 'tahoe-ski-conditions';

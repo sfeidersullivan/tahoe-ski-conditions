@@ -22,7 +22,7 @@ export const getMountains = () => {
   const cache = getCache();
   const { mountains } = cache;
   if (!Array.isArray(mountains) || mountains.length < 1) {
-    const defaultList = [Object.keys(mountainMap)[0]];
+    const defaultList = Object.keys(mountainMap).slice(0,3);
     setMountains(defaultList);
     return defaultList;
   }
