@@ -13,7 +13,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <div style={{  }}>
         <iframe type='text/html' height={ 250 } width={ '100%' } frameBorder='0' src={url} />
-        <TwitterCarousel/>
+        <TwitterCarousel mountains={mountains} />
       </div>
     </Layout>
   );
