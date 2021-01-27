@@ -7,7 +7,7 @@ import SettingsIcon from '../images/gear.svg';
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `gray`,
+      background: `rgb(51,51,51)`,
       marginBottom: `1.45rem`,
     }}
   >
